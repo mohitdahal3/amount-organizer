@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>Amount organizer</title>
+</head>
+
+<body>
+    <div class="container my-4">
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="base-input" class="col-form-label">Input base amounts:</label>
+            </div>
+            <div class="col-auto">
+                <input type="text" placeholder="ex: 2, 20, 100..." id="base-input" class="form-control">
+            </div>
+            <div class="col-auto">
+                <button id="input-btn" class="btn btn-primary">Add</button>
+            </div>
+        </div>
+        <div class="row g-3 align-items-center">
+            <div id="stack" class="hstack gap-3">
+                <div style="font-size: large;" class="p-2">Base Amounts: </div>
+                <div class="p-2"><h4><span class="badge bg-secondary">1</span></h4></div>
+            </div>
+        </div>
+        
+        <hr style="height: 1px;">
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="amount-input" class="col-form-label">Input amount: </label>
+            </div>
+            <div class="col-auto">
+                <input type="text" placeholder="ex: 31415 (no decimal)" id="amount-input" class="form-control">
+            </div>
+            <div class="col-auto">
+                <button id="amount-btn" class="btn btn-primary">Organize</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Button trigger modal -->
+<button id="launch" style="display: none;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal modal-dialog modal-dialog-centered fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Amount Organized:</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modal-body">
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
